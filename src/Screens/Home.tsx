@@ -8,36 +8,37 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TeamMembers from "../Components/Home/TeamMembers";
 
-
-const Home = () => {
-  const customColStyle = {
-    marginBottom: "10px", // Reduzimos a margem inferior em 10px
+const Home: React.FC = () => {
+  const customColStyle: React.CSSProperties = {
+    marginBottom: "10px",
   };
 
-  const cardStyle = {
-    marginTop: "15px", // Adicionamos uma margem superior para centralizar verticalmente
-    marginBottom: "15px", // Adicionamos uma margem inferior para centralizar verticalmente
+  const cardStyle: React.CSSProperties = {
+    marginTop: "15px",
+    marginBottom: "15px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   };
 
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "#f0f2f5" }}>
       <MainNavbar />
-      
 
-      <Container fluid>
+      <Container fluid className="custom-container">
         <Header />
         <Search />
         <Row className="justify-content-center">
           {[...Array(8)].map((_, index) => (
             <Col key={index} xs={12} sm={6} md={4} lg={3} style={customColStyle}>
-              <div style={cardStyle}> {/* Envolver CardBike com uma div */}
+              <div style={cardStyle} className="text-center">
                 <CardBike />
               </div>
             </Col>
           ))}
         </Row>
       </Container>
-      <TeamMembers/>
+      <TeamMembers />
     </div>
   );
 };
