@@ -6,6 +6,8 @@ import Search from "../Components/Home/Search";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import TeamMembers from "../Components/Home/TeamMembers";
+
 
 const Home = () => {
   const customColStyle = {
@@ -20,6 +22,7 @@ const Home = () => {
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "#f0f2f5" }}>
       <MainNavbar />
+      
 
       <Container fluid>
         <Header />
@@ -34,6 +37,7 @@ const Home = () => {
           ))}
         </Row>
       </Container>
+      <TeamMembers/>
     </div>
   );
 };
