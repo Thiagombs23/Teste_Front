@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TeamMembers from "../Components/Home/TeamMembers";
+import ContactSection from "../Components/Home/ContactSection";
 
 const Home: React.FC = () => {
   const customColStyle: React.CSSProperties = {
@@ -19,6 +20,18 @@ const Home: React.FC = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
+  };
+
+  const dividerStyle: React.CSSProperties = {
+    margin: "0px 0",
+    borderBottom: "3px solid rgba(0, 0, 0, 0.7)",
+    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
+  };
+
+  const contactSectionStyle: React.CSSProperties = {
+    marginTop: "2cm", // Adicione um espaço superior de 2cm
+    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
   };
 
   return (
@@ -38,7 +51,17 @@ const Home: React.FC = () => {
           ))}
         </Row>
       </Container>
+
+      {/* TeamMembers */}
       <TeamMembers />
+
+      {/* Divisão visual discreta entre TeamMembers e ContactSection */}
+      <div style={dividerStyle}></div>
+
+      {/* ContactSection com espaço superior de 2cm */}
+      <div style={{ ...contactSectionStyle }}>
+        <ContactSection />
+      </div>
     </div>
   );
 };
