@@ -59,9 +59,9 @@ const ContactSection: React.FC = () => {
                 <Form.Control as="textarea" name="message" rows={5} placeholder="Mensagem" required />
               </Form.Group>
               <div className="my-3">
-                <div className="loading">Carregando...</div>
+                <div className="loading"></div>
                 <div className="error-message"></div>
-                <div className="sent-message" style={{ fontSize: '16px' }}>Sua mensagem foi enviada. Obrigado!</div>
+                <div className="sent-message" style={{ fontSize: '16px' }}></div>
               </div>
               <div className="text-center">
                 <Button type="submit" style={{ backgroundColor: 'orange', color: 'white', fontSize: '16px' }}>Enviar</Button>
