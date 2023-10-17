@@ -30,7 +30,7 @@ const Home: React.FC = () => {
   };
 
   const contactSectionStyle: React.CSSProperties = {
-    marginTop: "2cm", // Adicione um espaço superior de 2cm
+   
     backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
   };
 
