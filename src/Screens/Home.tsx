@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import MainNavbar from "../Components/Navbar/Navbar";
 import Header from "../Components/Home/Header";
@@ -20,18 +22,18 @@ const Home: React.FC = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
+    backgroundColor: "#f0f2f5", 
   };
 
   const dividerStyle: React.CSSProperties = {
     margin: "0px 0",
     borderBottom: "3px solid rgba(0, 0, 0, 0.7)",
-    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
+    backgroundColor: "#f0f2f5", 
   };
 
   const contactSectionStyle: React.CSSProperties = {
    
-    backgroundColor: "#f0f2f5", // Define o fundo como a cor da página Home
+    backgroundColor: "#f0f2f5", 
   };
 
   return (
@@ -52,13 +54,13 @@ const Home: React.FC = () => {
         </Row>
       </Container>
 
-      {/* TeamMembers */}
+      
       <TeamMembers />
 
-      {/* Divisão visual discreta entre TeamMembers e ContactSection */}
+      
       <div style={dividerStyle}></div>
 
-      {/* ContactSection com espaço superior de 2cm */}
+      
       <div style={{ ...contactSectionStyle }}>
         <ContactSection />
       </div>

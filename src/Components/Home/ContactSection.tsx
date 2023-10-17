@@ -3,12 +3,12 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const ContactSection: React.FC = () => {
   return (
-    <section id="contact" className="contact" style={{ backgroundColor: 'white' }}>
+    <section id="contact" className="contact" style={{ backgroundColor: 'white', padding: '20px' }}>
       <Container>
         <Row>
           <Col lg={4} md={6}>
             <div className="contact-about">
-              <h3>Terra SoftHouse</h3>
+              <h3 style={{ fontSize: '20px', fontWeight: 'bold' }}>Terra SoftHouse</h3>
               <p>
                 A equipe Terra Softhouse é um grupo de talentosos desenvolvedores de software que teve origem na Fatec
                 (Faculdade de Tecnologia) durante o curso de Desenvolvimento de Software. A equipe foi formada por
@@ -16,7 +16,7 @@ const ContactSection: React.FC = () => {
                 inovadoras e de alta qualidade no mundo da tecnologia da informação.
               </p>
               <div className="social-links">
-                <a href="https://github.com/projetoPDali" className="twitter">
+                <a href="https://github.com/projetoPDali" className="twitter" style={{ fontSize: '20px' }}>
                   <i className="bi bi-github"></i>
                 </a>
               </div>
@@ -26,19 +26,19 @@ const ContactSection: React.FC = () => {
           <Col lg={3} md={6} className="mt-4 mt-md-0">
             <div className="info">
               <div>
-                <i className="ri-map-pin-line"></i>
-                <p>R: Faria Lima, 155 - Jardim Santa Maria<br />Jacareí-SP 12328-070</p>
+                <i className="ri-map-pin-line" style={{ fontSize: '20px' }}></i>
+                <p style={{ fontSize: '16px' }}>R: Faria Lima, 155 - Jardim Santa Maria<br />Jacareí-SP 12328-070</p>
               </div>
 
               <div>
-                <i className="ri-mail-send-line"></i>
-                <p>pdali.bike@gmail.com</p>
+                <i className="ri-mail-send-line" style={{ fontSize: '20px' }}></i>
+                <p style={{ fontSize: '16px' }}>pdali.bike@gmail.com</p>
               </div>
 
               <div>
                 <a href="https://wa.me/11982175526">
-                  <i className="ri-phone-line"></i>
-                  <p>(11) 98217-5526</p>
+                  <i className="ri-phone-line" style={{ fontSize: '20px' }}></i>
+                  <p style={{ fontSize: '16px' }}>(11) 98217-5526</p>
                 </a>
               </div>
             </div>
@@ -59,12 +59,12 @@ const ContactSection: React.FC = () => {
                 <Form.Control as="textarea" name="message" rows={5} placeholder="Mensagem" required />
               </Form.Group>
               <div className="my-3">
-                <div className="loading">Loading</div>
+                <div className="loading">Carregando...</div>
                 <div className="error-message"></div>
-                <div className="sent-message">Your message has been sent. Thank you!</div>
+                <div className="sent-message" style={{ fontSize: '16px' }}>Sua mensagem foi enviada. Obrigado!</div>
               </div>
               <div className="text-center">
-                <Button type="submit">Enviar</Button>
+                <Button type="submit" style={{ backgroundColor: 'orange', color: 'white', fontSize: '16px' }}>Enviar</Button>
               </div>
             </Form>
           </Col>
