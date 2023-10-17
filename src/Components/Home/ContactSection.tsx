@@ -64,7 +64,7 @@ const ContactSection: React.FC = () => {
                 <div className="sent-message" style={{ fontSize: '16px' }}></div>
               </div>
               <div className="text-center">
-                <Button type="submit" style={{ backgroundColor: 'orange', color: 'white', fontSize: '16px' }}>Enviar</Button>
+                <Button type="submit" style={{ backgroundColor: 'blue', color: 'white', fontSize: '16px' }}>Enviar</Button>
               </div>
             </Form>
           </Col>
